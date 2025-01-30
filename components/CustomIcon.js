@@ -33,7 +33,7 @@ export const ICON_TYPE = {
   ZOCIAL: 'Zocial',
 };
 
-const CustomIcon = ({type, name, color, size, paddingLeft, style}) => {
+const CustomIcon = ({origin, name, color, size, paddingLeft, style}) => {
   let colorx = color || '#aaaaaa';
   let sizex = size || 24;
   let namex = name || 'right';
@@ -41,7 +41,7 @@ const CustomIcon = ({type, name, color, size, paddingLeft, style}) => {
 
   let Element = Ionicons;
 
-  switch (type) {
+  switch (origin) {
     case ICON_TYPE.ANT_ICON:
       Element = AntDesign;
       break;
